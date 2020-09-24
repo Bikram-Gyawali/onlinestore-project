@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(5, 29, 110) rgb(255, 255, 255);
+}
+
+body {
+    background-color: ivory;
+}

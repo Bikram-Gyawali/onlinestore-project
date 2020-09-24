@@ -1,0 +1,219 @@
+.username {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    height: 50px;
+    width: 100%;
+    font-weight: bold;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+.email {
+    font-size: 18px;
+    width: 100%;
+    padding: 15px;
+    margin: 10px;
+}
+
+.review-box {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.form {
+    border-radius: 10px;
+    align-items: left;
+}
+
+input[type=text] {
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(71, 70, 70);
+    background-color: inherit
+}
+
+input:required:focus {
+    border-bottom: 10px solid rgb(78, 236, 4);
+    outline: none;
+}
+
+input[type=text]:focus {
+    border-bottom: 3px solid #555;
+}
+
+input[type=mail]:required {
+    border: none;
+    border-bottom: 1px solid rgb(87, 85, 85);
+    background-color: inherit
+}
+
+input[type=mail]:focus {
+    border-bottom: 3px solid #555;
+}
+
+.review {
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: inherit;
+    width: 90%;
+    margin: 0 10px;
+    height: auto;
+    font-size: 15px;
+}
+
+input[type=submit] {
+    width: auto;
+    padding: 3px 4px;
+    font-family: monospace;
+    background-color: #4CAF50;
+    color: white;
+    margin: 0 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+.post {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.post:hover {
+    color: rgb(63, 58, 55);
+    background-color: rgb(106, 250, 106);
+}
+
+
+/* commentlist */
+
+.review-list {
+    display: flex;
+    background-color: rgba(207, 202, 202, 0.2);
+    margin: 3px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.review-list:hover {
+    box-shadow: 0 1px 2px 0 black;
+    transition: all 0.25s;
+}
+
+.email-cm {
+    font-size: 12px;
+    position: relative;
+    margin: 5px;
+    font-weight: lighter;
+}
+
+.review-name>p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.review-comment {
+    text-align: left;
+    word-wrap: normal;
+}
+
+.delete {
+    display: inline-block;
+    color: rgb(238, 87, 87);
+    background-color: black;
+    border: none;
+    height: 30px;
+    right: 3em;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.delete:hover {
+    scale: 1.1;
+    color: red;
+}
+
+.fa-trash-alt:hover {
+    /* Start the shake animation  */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@media screen and (max-width:720px) {
+    .username {
+        display: inline-block;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-around;
+        /* margin: 50px; */
+        width: 100%;
+    }
+    .email {
+        position: relative;
+    }
+    input[type=text] {
+        width: 100%;
+        margin-left: -50px;
+    }
+    input[type=mail] {
+        width: 100%;
+        margin-left: -75px;
+    }
+    .review {
+        width: 100%;
+        margin: 15px 0 10px -35px;
+        padding: 0;
+        font-size: 20px;
+    }
+}

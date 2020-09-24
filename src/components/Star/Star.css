@@ -1,0 +1,23 @@
+input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    align-items: center;
+    margin-left: 8px;
+    margin-top: 10px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.radio-line {
+    align-items: center;
+}
+
+#rate {
+    font-size: 100px;
+}
+
+.star {
+    position: relative;
+    cursor: pointer;
+    transition: color 200ms;
+}
