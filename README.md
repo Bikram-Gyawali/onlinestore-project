@@ -1,4 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `Features:`
+        "Login/Signup",
+        "adding items to cart",
+        "removing items from cart",
+        "product preview",
+        "adding numbers of item at once",
+        "categories sorting",
+        "comment section",
+        "adding to wishlist",
+        "payment calculation",
+        "items added notifiction",
+        "share link of the item"
+
 
 ## Available Scripts
 
